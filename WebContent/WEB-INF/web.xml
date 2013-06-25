@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>jdbcPage</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>view</display-name>
+    <servlet-name>view</servlet-name>
+    <servlet-class>com.cn.action.view</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>view</servlet-name>
+    <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>test</display-name>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.cn.action.test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+   <context-param>   
+           <param-name>fields</param-name>   
+           <param-value>id,studentName,hobby</param-value>   
+   </context-param>
+   <context-param>
+   <param-name></param-name>
+   <param-value></param-value>
+   </context-param>
+
+
+</web-app>
